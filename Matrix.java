@@ -15,8 +15,8 @@ public class Matrix {
         for (int row = 0; row < matrix[0].length; row++) {
             for (int col = 0; col < matrix.length; col++) {
                 firmVal = 0;
+                firmVal = getNumbers();
                 matrix[row][col] = firmVal;
-                col++;
             }
         }
     }
@@ -53,5 +53,15 @@ public class Matrix {
         return false;
     }
 }
-
+    public boolean nashEquilibrium(Matrix a, Matrix b, int c, int d, int e, int f, int g, int h, int i, int j){
+        if(a.isDominantStrat(c, d, e, f) && b.isDominantStrat(g, h, i, j)){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public int getNumbers(){
+        System.out.println("Enter the numbers of the current quadrent");
+        return sc.nextInt();
+    }
 }

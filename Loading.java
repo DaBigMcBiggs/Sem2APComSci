@@ -1,0 +1,20 @@
+public class Loading {
+    public static void printLoading(int count) {
+        if (count == 4)
+            return;
+
+        System.out.print("[");
+        for (int i = 1; i <= count; i++)
+            System.out.print("*");
+        System.out.println("]");
+        try {
+            Thread.sleep(750);
+        } catch (InterruptedException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        System.out.print("\033[H\033[2J");
+        printLoading(count + 1);
+
+    }
+}
