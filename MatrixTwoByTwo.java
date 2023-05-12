@@ -1,5 +1,6 @@
 public class MatrixTwoByTwo extends Matrix {
-    public MatrixTwoByTwo(){
+    // cool way to use inheritance
+    public MatrixTwoByTwo() {
         super(new int[2][2]);
     }
 }

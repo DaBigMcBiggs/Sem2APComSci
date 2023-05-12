@@ -1,4 +1,5 @@
 public class Loading {
+    // cool recursion
     public static void printLoading(int count) {
         if (count == 4)
             return;
@@ -10,7 +11,6 @@ public class Loading {
         try {
             Thread.sleep(750);
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         System.out.print("\033[H\033[2J");
